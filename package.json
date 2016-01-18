@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "wishlist",
   "version": "0.0.0",
   "license": "Apache-2.0",
@@ -20,17 +19,5 @@
     "karma": "^0.13.15",
     "karma-chrome-launcher": "^0.2.1",
     "karma-jasmine": "^0.3.6"
-=======
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
-  "main": "server.js",
-  "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
-  "dependencies": {
-    "async": "~0.2.8",
-    "express": "~3.2.4",
-    "socket.io": "~0.9.14"
->>>>>>> bf1f3587893a35b9316add77de78284eda43a854
   }
 }
