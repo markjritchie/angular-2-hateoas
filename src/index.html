@@ -2,20 +2,59 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Wish</title>
+  <title>Wishlist</title>
   <base href=".">
   <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
   {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/css/tether.min.css"  crossorigin="anonymous">
 </head>
 <body>
-  <wish-app>Loading...</wish-app>
+  
+   <div class="navbar-collapse collapse inverse" id="navbar-header">
+      <div class="container-fluid">
+        <div class="about">
+          <h4>About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="social">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Follow on Twitter</a></li>
+            <li><a href="#">Like on Facebook</a></li>
+            <li><a href="#">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-static-top navbar-dark bg-inverse">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+          &#9776;
+        </button>
+        <a href="#" class="navbar-brand">Wishlist</a>
+      </div>
+    </div>
+<wishlist-app>Loading...</wishlist-app>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="pull-xs-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Wishlist is &copy; Mark Ritchie, but please download and customize it for yourself!</p>
+      </div>
+    </footer>
 
   <script src="vendor/systemjs/dist/system.src.js"></script>
   <script src="vendor/rxjs/bundles/Rx.js"></script>
   <script src="vendor/angular2/bundles/angular2.dev.js"></script>
   <script src="vendor/angular2/bundles/http.dev.js"></script>
   <script src="vendor/angular2/bundles/router.dev.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"  crossorigin="anonymous"></script>
   <script>
     System.config({
       packages: {

@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {WishApp} from './app/wish';
+import {WishlistApp} from './app/wishlist';
 
 
-bootstrap(WishApp);
+bootstrap(WishlistApp);

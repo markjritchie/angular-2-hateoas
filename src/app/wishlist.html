@@ -1,0 +1,38 @@
+    <section class="jumbotron text-xs-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Wishlist</h1>
+        <p class="lead text-muted">Select a person to view their wishlist.</p>
+      </div>
+    </section>
+
+    <div class="album text-muted">
+      <div class="container">
+
+        <div class="row">
+          <div class="card" *ngFor="#person of people">
+            <img data-src="holder.js/100px280/thumb" alt="Avatar">
+            <p class="card-text">{{person.name}} - {{person.dob | date:"dd MMM"}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ 
+ 
+ <div class="jumbotron">
+    <div class="container">
+        <h1>
+            Wishlist for <person-avatacdr [person]="selectedPerson"></person-avatacdr>
+        </h1>
+    </div>    
+</div>
+<div class="list-group">
+    <button *ngFor="#item of wishes"
+    class="list-group-item"
+     (click)="onSelect(item)"
+     [class.selected]="item === selectedWish">
+    <span class="label label-default label-pill pull-xs-right">{{item.price | currency:'EUR':true}}</span>
+    {{item.description}}
+    </button>
+</div>
+<wishlist-item [wish]="selectedWish"></wishlist-item>

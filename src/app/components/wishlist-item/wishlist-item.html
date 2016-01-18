@@ -1,0 +1,21 @@
+<div *ngIf="wish" class="container m-t-3">
+    <h2>{{wish.description}} details</h2>
+    <div class="form-group row">
+        <label for="description" class="col-sm-2 form-control-label">Description</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="wish.description" placeholder="description" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="price" class="col-sm-2 form-control-label">Price</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="wish.price" placeholder="price" type="number" id="price" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="location" class="col-sm-2 form-control-label">Place seen</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="wish.location" placeholder="Link to item on website" type="url" id="location" class="form-control" />
+        </div>
+    </div>
+</div>
